@@ -1,19 +1,19 @@
 ## 目录
 
 [linux kernel](#Linux-kernel )
-- [1. kernel 的诞生背景和历史发展](#1.-kernel-的诞生背景和历史发展)
-- [2. kernel 的架构设计和模块分层](#2.-kernel-的架构设计和模块分层)
-- [3. Linux 驱动在内核中的位置](#3.-Linux-驱动在内核中的位置)
+- [1 kernel 的诞生背景和历史发展](#1-kernel-的诞生背景和历史发展)
+- [2 kernel 的架构设计和模块分层](#2-kernel-的架构设计和模块分层)
+- [3 Linux 驱动在内核中的位置](#3-Linux-驱动在内核中的位置)
 
 [Andriod 架构](#Andriod-架构)
 
-- [1. Andriod 架构设计](#1.-Andriod-架构设计)
-- [2. Andriod 和 linux 的关系](#2.-Andriod-和-linux-的关系)
+- [1 Andriod 架构设计](#1-Andriod-架构设计)
+- [2 Andriod 和 linux 的关系](#2-Andriod-和-linux-的关系)
 
 
 # Linux kernel 
 
-## 1. kernel 的诞生背景和历史发展
+## 1 kernel 的诞生背景和历史发展
 
 #### **1. 诞生背景**
 - 计算机操作系统发展初期，各种系统缺乏统一标准，用户容易混淆操作系统与应用程序。
@@ -53,7 +53,7 @@
 
 
 
-## 2. kernel 的架构设计和模块分层
+## 2 kernel 的架构设计和模块分层
 
 
 #### 1. Linux 内核源码树
@@ -191,7 +191,7 @@ Linux 内核的架构是一种 **模块化设计**，可以动态加载和卸载
     
 
 
-## 3. Linux 驱动在内核中的位置
+## 3 Linux 驱动在内核中的位置
 Linux **驱动（Driver）** 是一类特殊的软件，它运行在 **内核空间（Kernel Space）**，负责管理和控制硬件设备，
 
 **驱动程序（Drivers）** 直接与 **硬件抽象层（HAL）** 交互，它屏蔽了硬件的复杂性，并向上提供标准化的接口，使用户空间的应用程序能够通过系统调用访问硬件。
@@ -267,7 +267,7 @@ Linux 设备驱动通常包括以下组件：
     - 
 # Andriod 架构
 
-## 1. Andriod 架构设计
+## 1 Andriod 架构设计
 
 Android 是基于 Linux 内核（Linux Kernel）的移动操作系统，但它在 Linux 基础上做了大量修改，以适应移动设备的需求。以下是 Android 的整体架构图。
 ```
@@ -356,7 +356,7 @@ Android 是基于 Linux 内核（Linux Kernel）的移动操作系统，但它�
         - **Android 内存管理优化**
     - Android 使用 **bionic** 代替标准 **glibc**，更适合移动设备。
 
-## 2. Andriod 和 linux 的关系
+## 2 Andriod 和 linux 的关系
 - **Android 内核** 基于 Linux，但做了大量修改。
 - **Android 使用 Linux 内核进行底层管理**，但应用层和框架层完全不同。
 - **Android 设备厂商需要修改 HAL** 以支持不同的硬件，如高通、联发科、三星的芯片。
