@@ -1,0 +1,6 @@
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+
+# 使用 busybox 提供的 getty 启动终端
+exec /sbin/getty -n -l /bin/sh 115200 ttyAMA0
